@@ -123,7 +123,7 @@ Set up your Silex application something like this:
 
 Create the user database:
 
-```mysql
+```sql
     mysql -uUSER -pPASSWORD MYDBNAME < vendor/jasongrimes/silex-simpleuser/sql/mysql.sql
 ```
 
