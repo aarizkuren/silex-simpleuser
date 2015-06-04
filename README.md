@@ -36,6 +36,7 @@ Install with composer. This command will automatically install the latest stable
 
 Set up your Silex application something like this:
 
+```php
     <?php
 
     use Silex\Application;
@@ -118,10 +119,13 @@ Set up your Silex application something like this:
     );
 
     return $app;
+```
 
 Create the user database:
 
+```mysql
     mysql -uUSER -pPASSWORD MYDBNAME < vendor/jasongrimes/silex-simpleuser/sql/mysql.sql
+```
 
 Note: if you're upgrading from SimpleUser 1.x,
 follow the instructions in [sql/MIGRATION.md](sql/MIGRATION.md) instead,
@@ -140,6 +144,7 @@ SimpleUser can work without any configuration at all,
 or you can customize one or more of the following options.
 The default values are shown below.
 
+```php
     $app['user.options'] = array(
 
         // Specify custom view templates here.
@@ -208,6 +213,7 @@ The default values are shown below.
             'value' => 'value',
         ),
     );
+```
 
 More information
 ----------------
