@@ -74,6 +74,9 @@ class UserServiceProvider implements ServiceProviderInterface, ControllerProvide
             'userTableName' => 'users',
             'userCustomFieldsTableName' => 'user_custom_fields',
 
+            // Url to redirect after register
+            'register_redirect' => 'user.view',
+
             // Override column names if necessary.
             'userColumns' => array(
                 'id' => 'id',

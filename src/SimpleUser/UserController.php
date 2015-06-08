@@ -116,7 +116,7 @@ class UserController
                     $app['session']->getFlashBag()->set('alert', 'Account created.');
 
                     // Redirect to user's new profile page.
-                    return $app->redirect($app['url_generator']->generate('user.view', array('id' => $user->getId())));
+                    return $app->redirect($app['url_generator']->generate($app['user.options']['register_redirect'], array('id' => $user->getId())));
                 }
 
             } catch (InvalidArgumentException $e) {
